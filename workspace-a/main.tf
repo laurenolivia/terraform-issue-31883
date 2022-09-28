@@ -16,7 +16,7 @@ terraform {
 
 provider "tfe" {
   hostname = "tfcdev-2c13224a.ngrok.io"
-  token    = ""
+  token    = "token"
 }
 
 resource "tfe_organization" "test" {
@@ -35,6 +35,5 @@ output "rgp" {
     name = tfe_workspace.test-workspace.name
 
   }
-    sensitive = true
-
+  sensitive = true
 }

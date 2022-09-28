@@ -8,7 +8,7 @@ terraform {
 
 provider "tfe" {
   hostname = "tfcdev-2c13224a.ngrok.io"
-  token    = ""
+  token    = "token"
 }
 
 data "tfe_outputs" "A" {
